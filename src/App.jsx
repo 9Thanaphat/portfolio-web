@@ -8,6 +8,7 @@ import AboutMe from './components/AboutMe'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Skills from './components/Skills'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 		<div className="mt-16"></div>
 		<Contact/>
 	</div>
+	<Footer/>
   </div>
 }
 
