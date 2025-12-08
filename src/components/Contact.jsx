@@ -10,7 +10,6 @@ const Contact = () => {
           Contact Me
         </h2>
 
-        {/* ตรงนี้ครับที่เพิ่มข้อความเข้าไป */}
         <p className='text-lg text-slate-600 dark:text-slate-300 mb-8 font-medium leading-relaxed'>
           I am currently looking for an internship opportunity. <br className="hidden md:block" />
           I would appreciate the opportunity to work with you.
@@ -18,7 +17,7 @@ const Contact = () => {
 
         <div className='flex justify-center mb-10'>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:tangcham.thanaphat@gmail.com"
               className='
                 flex items-center gap-2
                 bg-slate-900 hover:bg-slate-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200

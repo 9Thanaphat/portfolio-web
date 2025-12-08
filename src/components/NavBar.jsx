@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { Sun, Moon, Menu } from "lucide-react";
 
 function NavBar() {
-	const [isDark, setDark] = useState(true);
+	const [isDark, setDark] = useState(false);
 
 	const toggleTheme = () => {
 		setDark(!isDark);

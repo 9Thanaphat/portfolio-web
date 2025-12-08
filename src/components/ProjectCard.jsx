@@ -1,41 +1,58 @@
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
 
-const ProjectCard = ({ title, image, description, techStack, githubLink }) => {
+const ProjectCard = ({ title, image, gif, description, techStack, githubLink }) => {
   return (
-	<div className="bg-white shadow-md rounded-lg p-4 transition-all duration-300 hover:scale-105">
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-60 object-cover rounded-md mb-3"
-      />
-      <h2 className="text-lg font-semibold">{title}</h2>
-      <p className="text-gray-600 text-sm mt-1">{description}</p>
+    <div className="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col overflow-hidden border border-gray-100">
 
-		<div className="flex flex-wrap gap-2 my-2">
+      <div className="relative h-56 w-full overflow-hidden bg-gray-200">
+
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+
+        {gif && (
+          <img
+            src={gif}
+            alt={`${title} gif`}
+            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          />
+        )}
+      </div>
+
+      <div className="p-5 flex flex-col flex-grow">
+        <h2 className="text-xl font-bold text-gray-800 mb-2">{title}</h2>
+        <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+          {description}
+        </p>
+
+        <div className="flex flex-wrap gap-2 mb-4">
           {techStack && techStack.map((tech, index) => (
             <span
               key={index}
-              className="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full border border-slate-200"
+              className="px-2.5 py-1 bg-gray-100 text-gray-700 text-[11px] font-semibold rounded-md tracking-wide"
             >
               {tech}
             </span>
           ))}
         </div>
-		<div className='mt-4 pt-4 border-t border-slate-100 flex gap-3'>
-		  	{githubLink && (
-        <a
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-sm bg-gray-50 hover:bg-gray-100 text-gray-700 shadow-sm p-2 rounded-md hover:text-black transition-colors font-medium"
-        >
-          <FaGithub size={20} />
-          Code
-        </a>
-      )}
-		</div>
 
+        {githubLink && (
+        <div className='pt-4 border-t border-gray-100'>
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors font-medium w-fit shadow-sm"
+            >
+              <FaGithub size={18} />
+              View Code
+            </a>
+        </div>
+        )}
+      </div>
 
     </div>
   )

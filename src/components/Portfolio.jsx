@@ -20,7 +20,8 @@ const projects = [
   },
   {
     title: "Cub3D",
-    image: "/img/cub3d-2.gif",
+    image: "/img/cub3d.png",
+    gif:"img/cub3d-2.gif",
     description:
       "A 3D ray-casting engine inspired by Wolfenstein 3D, built in C using the MLX42 graphics library.",
     githubLink: "https://github.com/jobreak11/Cube3D",
@@ -28,7 +29,8 @@ const projects = [
   },
   {
     title: "FdF",
-    image: "/img/fdf.gif",
+    image: "/img/fdf.png",
+    gif:"img/fdf2.gif",
     description:
       "A 3D wireframe terrain renderer written in C, featuring isometric projection and graphics using MLX42.",
     githubLink: "https://github.com/9Thanaphat/FdF",
@@ -49,6 +51,7 @@ const Portfolio = () => {
           key={index}
           title={p.title}
           image={p.image}
+          gif={p.gif}
           description={p.description}
           githubLink={p.githubLink}
           techStack={p.techStack}
