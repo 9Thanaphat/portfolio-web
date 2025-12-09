@@ -14,13 +14,13 @@ function App() {
 
   return <div className='bg-primary dark:bg-[#010e21]'>
 	<NavBar/>
-	<div className='pl-100 pr-100 pt-25'>
+	{/* <Home/> */}
+	<main>
 		<AboutMe/>
-		<div className="mt-16"></div>
+		{/* <Skills/> */}
 		<Portfolio/>
-		<div className="mt-16"></div>
 		<Contact/>
-	</div>
+	</main>
 	<Footer/>
   </div>
 }

@@ -45,7 +45,7 @@ const Portfolio = () => {
             Projects
         </span>
     <div className='mt-5'></div>
-    <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-auto'>
+    <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-auto'>
         {projects.map((p, index) => (
         <ProjectCard
           key={index}
