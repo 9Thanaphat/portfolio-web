@@ -29,7 +29,7 @@ function NavBar() {
 		<div className='h-20 px-4 sm:px-10 flex justify-between items-center border-b-2 border-gray-500 bg-primary dark:bg-[#000d21] dark:text-white'>
 			<div className=''></div>
 			<div className="hidden md:flex space-x-8">
-				<a href="#home" className="hover:text-orange-600">HOME</a>
+				{/* <a href="#home" className="hover:text-orange-600">HOME</a> */}
 				<a href="#about" className="hover:text-orange-600">ABOUT</a>
 				<a href="#portfolio" className="hover:text-orange-600">PROJECTS</a>
 				<a href="#contact" className="hover:text-orange-600">CONTACT</a>

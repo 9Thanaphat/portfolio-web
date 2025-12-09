@@ -40,23 +40,25 @@ const projects = [
 
 const Portfolio = () => {
   return (
-	<section id='portfolio' className='p-5'>
-    <span className="text-orange-600 dark:text-orange-400 font-semibold tracking-wider text-sm uppercase">
-            Projects
-        </span>
-    <div className='mt-5'></div>
-    <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-auto'>
-        {projects.map((p, index) => (
-        <ProjectCard
-          key={index}
-          title={p.title}
-          image={p.image}
-          gif={p.gif}
-          description={p.description}
-          githubLink={p.githubLink}
-          techStack={p.techStack}
-        />
-      ))}
+	<section id='portfolio' className='px-6 py-12 lg:px-20 bg-primary dark:bg-[#00021c] dark:text-white'>
+    <div className='max-w-7xl mx-auto'>
+      <span className="text-orange-600 dark:text-orange-400 font-semibold tracking-wider text-sm uppercase">
+              Projects
+          </span>
+      <div className='mt-5'></div>
+      <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-auto'>
+          {projects.map((p, index) => (
+          <ProjectCard
+            key={index}
+            title={p.title}
+            image={p.image}
+            gif={p.gif}
+            description={p.description}
+            githubLink={p.githubLink}
+            techStack={p.techStack}
+          />
+        ))}
+      </div>
     </div>
   </section>
   )
