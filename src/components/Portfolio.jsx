@@ -3,11 +3,21 @@ import ProjectCard from './ProjectCard'
 
 const projects = [
   {
+    title: "simple-auth-website",
+    image: "/img/auth-1.png",
+    gif:"img/auth-2.png",
+    description:
+      "Full-stack MERN application providing user authentication (registration/login) with JWT private route protection on the main dashboard.",
+    techStack: ["React", "JavaScript","Node.js", "Tailwind CSS", "MongoDB"],
+    githubLink: "https://github.com/9Thanaphat/auth-system",
+    previewLink:"http://203.159.93.245:5173/",
+  },
+  {
     title: "PC Part Picker",
     image: "/img/pc-part-picker.png",
     description:
       "A web application that allows users to browse and select PC components with real-time filtering, component details, and dynamic updating of selected parts.",
-    techStack: ["React", "JavaScript","Node.js", "Tailwind CSS", "MySQL"],
+    techStack: ["React", "JavaScript","Node.js", "Tailwind CSS", "MongoDB"],
     githubLink: "https://github.com/9Thanaphat/pc-part-picker",
   },
   {
@@ -55,6 +65,7 @@ const Portfolio = () => {
             gif={p.gif}
             description={p.description}
             githubLink={p.githubLink}
+            previewLink={p.previewLink}
             techStack={p.techStack}
           />
         ))}
