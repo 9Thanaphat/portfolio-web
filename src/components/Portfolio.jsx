@@ -23,6 +23,7 @@ const projects = [
   {
     title: "Smart Hydroponics Control & Monitoring System",
     image: "/img/hydroweb.png",
+    gif:"img/hydroweb.gif",
     description:
       "A web application for the remote monitoring and automated control of a hydroponics farm.",
     githubLink: "https://github.com/jobreak11/https://github.com/9Thanaphat/2021_hydroponics_web_app_project",
