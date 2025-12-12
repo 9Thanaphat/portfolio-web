@@ -1,12 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { Analytics } from '@vercel/analytics/next';
+import { inject } from '@vercel/analytics';
 import './style.css'
 import App from './App.jsx'
+
+// Initialize Vercel Web Analytics
+inject();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <Analytics />
   </StrictMode>
 )
