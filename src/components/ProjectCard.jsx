@@ -20,9 +20,9 @@ const ProjectCard = ({ title, image, gif, description, techStack, githubLink, pr
         )}
       </div>
 
-      <div className="p-5 flex flex-col flex-grow">
+      <div className="p-5 flex flex-col grow">
         <h2 className="text-xl font-bold text-gray-800 mb-2">{title}</h2>
-        <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+        <p className="text-gray-600 text-sm leading-relaxed mb-4 grow">
           {description}
         </p>
 
@@ -37,7 +37,7 @@ const ProjectCard = ({ title, image, gif, description, techStack, githubLink, pr
           ))}
         </div>
         {(githubLink || previewLink) && (
-            <div className='pt-4 border-t border-gray-100 flex flex-wrap gap-3 mt-auto'> {/* ใช้ mt-auto เพื่อให้ปุ่มอยู่ด้านล่างสุด */}
+            <div className='pt-4 border-t border-gray-100 flex flex-wrap gap-3 mt-auto'>
 
                 {githubLink && (
                     <a
