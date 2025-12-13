@@ -1,65 +1,55 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import my_photo from '../../public/img/my_photo.png'
+import { aboutText } from '../i18n/about'
 
-const AboutMe = () => {
+const AboutMe = ({lang}) => {
+  const t = aboutText[lang]
+
   return (
-    <section id='about' className='min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 px-6 py-12 max-w-6xl mx-auto dark:text-gray-100'>
-
+    <section
+      id='about'
+      className='min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 px-6 py-12 max-w-6xl mx-auto dark:text-gray-100'
+    >
       <div className="w-full md:w-1/2 space-y-6 max-w-prose text-center md:text-left">
 
         <div className="space-y-2">
-            <h2 className="text-xl font-medium text-orange-400 dark:text-orange-400 tracking-wide">
-                HELLO, I'M
-            </h2>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-800 dark:text-white leading-tight">
-                Thanaphat Tangcham
-            </h1>
-            <p className="text-lg text-slate-600 dark:text-slate-400 font-medium">
-                Computer Engineering Student
-            </p>
+          <h2 className="text-xl font-medium text-orange-400 tracking-wide">
+            {t.hello}
+          </h2>
+          <h1 className="text-4xl md:text-5xl font-bold">
+            {t.name}
+          </h1>
+          <p className="text-lg text-slate-600 dark:text-slate-400 font-medium">
+            {t.title}
+          </p>
         </div>
 
-        <div className="text-base leading-7 text-slate-600 dark:text-slate-300 space-y-4 text-center md:text-left">
-          <p>
-            I am a student from <span className="font-semibold text-slate-800 dark:text-white">RMUTT</span>,
-            interested in Fullstack development. Currently building my skills in
-            <span className="font-semibold text-orange-600 dark:text-orange-400"> React </span>
-            and <span className="font-semibold text-orange-600 dark:text-orange-400"> Node.js</span>,
-            with a growing passion for Backend engineering.
-          </p>
-
-          <p>
-            I’m actively expanding my knowledge in <span className="font-semibold text-slate-800 dark:text-white">Go, Docker, and Cloud deployment</span>,
-            while exploring software design principles like Clean Architecture to build robust applications.
-          </p>
+        <div className="text-base leading-7 text-slate-600 dark:text-slate-300 space-y-4">
+          <p>{t.p1_rest}</p>
+          <p>{t.p2_rest}</p>
         </div>
 
         <div className='flex flex-wrap gap-4 pt-4 justify-center md:justify-start'>
-            <a href="#" className='bg-slate-900 hover:bg-slate-700 dark:bg-white dark:text-slate-900 dark:hover:bg-gray-200 text-white flex gap-2 items-center py-2.5 px-6 rounded-lg transition-all font-medium text-sm shadow-sm'>
-                <FaFileAlt /> Resume
-            </a>
+          <a className='bg-slate-900 text-white flex gap-2 items-center py-2.5 px-6 rounded-lg'>
+            <FaFileAlt /> {t.resume}
+          </a>
 
-            <a href="https://github.com/9thanaphat" target='_blank' rel="noreferrer" className='border border-slate-300 hover:border-slate-800 text-slate-700 hover:text-slate-900 dark:border-slate-600 dark:text-slate-300 dark:hover:border-white dark:hover:text-white flex gap-2 items-center py-2.5 px-6 rounded-lg transition-all font-medium text-sm'>
-                <FaGithub size={18}/> GitHub
-            </a>
+          <a href="https://github.com/9thanaphat" target='_blank' rel="noreferrer"
+            className='border flex gap-2 items-center py-2.5 px-6 rounded-lg'>
+            <FaGithub /> {t.github}
+          </a>
 
-            <a href="https://www.linkedin.com/in/9thanaphat/" target='_blank' rel="noreferrer" className='border border-slate-300 hover:border-blue-600 text-slate-700 hover:text-blue-600 dark:border-slate-600 dark:text-slate-300 dark:hover:border-blue-400 dark:hover:text-blue-400 flex gap-2 items-center py-2.5 px-6 rounded-lg transition-all font-medium text-sm'>
-                <FaLinkedin size={18}/> LinkedIn
-            </a>
+          <a href="https://www.linkedin.com/in/9thanaphat/" target='_blank' rel="noreferrer"
+            className='border flex gap-2 items-center py-2.5 px-6 rounded-lg'>
+            <FaLinkedin /> {t.linkedin}
+          </a>
         </div>
-
       </div>
 
       <div className='w-full md:w-1/2 flex justify-center md:justify-end'>
-        <div className='relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80'>
-            <div className="absolute top-4 left-4 w-full h-full border-2 border-slate-800 dark:border-slate-400 rounded-lg -z-10"></div>
-            <div className='w-full h-full bg-slate-200 dark:bg-slate-700 rounded-lg overflow-hidden shadow-lg object-cover'>
-                <img src={my_photo} alt='Thanaphat' className='w-full h-full object-cover' />
-            </div>
-        </div>
+        <img src={my_photo} alt='Thanaphat' className='w-72 h-72 object-cover rounded-lg' />
       </div>
-
     </section>
   )
 }

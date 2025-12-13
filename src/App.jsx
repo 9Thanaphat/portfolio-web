@@ -12,13 +12,15 @@ import Footer from './components/Footer'
 
 function App() {
 
+	const [lang, setLang] = useState("en");
+
   return <div className='bg-primary dark:bg-[#010e21]'>
-	<NavBar/>
+	<NavBar lang={lang} setLang={setLang}/>
 	{/* <Home/> */}
 	<main>
-		<AboutMe/>
+		<AboutMe lang={lang}/>
 		{/* <Skills/> */}
-		<Portfolio/>
+		<Portfolio lang={lang}/>
 		<Contact/>
 	</main>
 	<Footer/>
