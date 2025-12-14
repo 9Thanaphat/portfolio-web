@@ -13,8 +13,9 @@ export const projectsText = {
         previewLink: "http://203.159.93.245:5173/",
       },
       {
-        title: "PC Part Picker",
-        image: "/img/pc-part-picker.png",
+        title: "pc-builder-web",
+        image: "/img/pc-1.png",
+        gif:"/img/pc-2.png",
         description:
           "A web application that allows users to browse and select PC components with real-time filtering and dynamic updates.",
         techStack: ["React", "JavaScript", "Node.js", "Tailwind CSS", "MongoDB"],
@@ -65,7 +66,7 @@ export const projectsText = {
         previewLink: "http://203.159.93.245:5173/",
       },
       {
-        title: "PC Part Picker",
+        title: "pc-builder-web",
         image: "/img/pc-part-picker.png",
         description:
           "เว็บแอปสำหรับเลือกและเปรียบเทียบอุปกรณ์คอมพิวเตอร์ พร้อมระบบกรองข้อมูลแบบเรียลไทม์",
