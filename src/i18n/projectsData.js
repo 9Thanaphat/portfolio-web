@@ -20,6 +20,7 @@ export const projectsText = {
           "A web application that allows users to browse and select PC components with real-time filtering and dynamic updates.",
         techStack: ["React", "JavaScript", "Node.js", "Tailwind CSS", "MongoDB"],
         githubLink: "https://github.com/9Thanaphat/pc-part-picker",
+        previewLink: "http://203.159.93.245:5175/",
       },
       {
         title: "Smart Hydroponics Control & Monitoring System",
@@ -72,6 +73,7 @@ export const projectsText = {
           "เว็บแอปสำหรับเลือกและเปรียบเทียบอุปกรณ์คอมพิวเตอร์ พร้อมระบบกรองข้อมูลแบบเรียลไทม์",
         techStack: ["React", "JavaScript", "Node.js", "Tailwind CSS", "MongoDB"],
         githubLink: "https://github.com/9Thanaphat/pc-part-picker",
+        previewLink: "http://203.159.93.245:5175/",
       },
       {
         title: "Smart Hydroponics Control & Monitoring System",
