@@ -33,7 +33,7 @@ export const projectsText = {
           "https://github.com/9Thanaphat/2021_hydroponics_web_app_project",
       },
       {
-        title: "Cub3D",
+        title: "Cub3D Ray-casting Engine",
         image: "/img/cub3d.png",
         gif: "/img/cub3d-2.gif",
         description:
@@ -42,7 +42,7 @@ export const projectsText = {
         githubLink: "https://github.com/jobreak11/Cube3D",
       },
       {
-        title: "FdF",
+        title: "FdF 3D Wireframe Renderer",
         image: "/img/fdf.png",
         gif: "/img/fdf2.gif",
         description:
@@ -86,7 +86,7 @@ export const projectsText = {
           "https://github.com/9Thanaphat/2021_hydroponics_web_app_project",
       },
       {
-        title: "Cub3D",
+        title: "Cub3D Ray-casting Engine",
         image: "/img/cub3d.png",
         gif: "/img/cub3d-2.gif",
         description:
@@ -95,7 +95,7 @@ export const projectsText = {
         githubLink: "https://github.com/jobreak11/Cube3D",
       },
       {
-        title: "FdF",
+        title: "FdF 3D Wireframe Renderer",
         image: "/img/fdf.png",
         gif: "/img/fdf2.gif",
         description:
