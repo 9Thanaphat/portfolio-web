@@ -34,7 +34,7 @@ const AboutMe = ({ lang }) => {
         <div className="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
           <a
             href="/Thanaphat_Tangcham_Resume.pdf"
-            className="bg-slate-900 text-white flex gap-2 items-center py-2.5 px-6 rounded-lg"
+            className="bg-slate-900  hover:bg-slate-700 text-white flex gap-2 items-center py-2.5 px-6 rounded-lg transition-colors duration-200"
           >
             <FaFileAlt /> {t.resume}
           </a>
@@ -43,7 +43,7 @@ const AboutMe = ({ lang }) => {
             href="https://github.com/9thanaphat"
             target="_blank"
             rel="noreferrer"
-            className="border flex gap-2 items-center py-2.5 px-6 rounded-lg"
+            className="border  hover:bg-slate-800 hover:text-white flex gap-2 items-center py-2.5 px-6 rounded-lg transition-colors duration-200"
           >
             <FaGithub /> {t.github}
           </a>
@@ -52,7 +52,7 @@ const AboutMe = ({ lang }) => {
             href="https://www.linkedin.com/in/9thanaphat/"
             target="_blank"
             rel="noreferrer"
-            className="border flex gap-2 items-center py-2.5 px-6 rounded-lg"
+            className="border hover:bg-blue-500 hover:text-white flex gap-2 items-center py-2.5 px-6 rounded-lg transition-colors duration-200"
           >
             <FaLinkedin /> {t.linkedin}
           </a>

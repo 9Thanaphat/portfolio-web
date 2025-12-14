@@ -15,21 +15,28 @@ const Contact = () => {
           I would appreciate the opportunity to work with you.
         </p>
 
-        <div className='flex justify-center mb-10'>
-            <a
-              href="mailto:tangcham.thanaphat@gmail.com"
-              className='
-                flex items-center gap-2
-                bg-slate-900 hover:bg-slate-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200
-                text-white font-medium
-                py-3 px-8 rounded-lg
-                transition-all duration-300
-              '
-            >
-              <FaEnvelope />
-              Send me an email
-            </a>
+        {/* ส่วน Email Action */}
+        <div className='flex flex-col items-center gap-4 mb-12'>
+          <a
+            href="mailto:tangcham.thanaphat@gmail.com"
+            className='
+              flex items-center gap-2
+              bg-slate-900 hover:bg-slate-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200
+              text-white font-medium
+              py-3 px-8 rounded-lg
+              transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1
+            '
+          >
+            <FaEnvelope />
+            Send me an email
+          </a>
+
+          {/* Text Email สำหรับให้ Copy ได้ง่ายๆ */}
+          <div className='text-slate-500 dark:text-slate-400 text-sm'>
+            Or copy my email: <span className='font-mono font-semibold text-slate-700 dark:text-slate-200 ml-1 select-all'>tangcham.thanaphat@gmail.com</span>
+          </div>
         </div>
+
       </div>
     </section>
   )
