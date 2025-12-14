@@ -33,7 +33,7 @@ const AboutMe = ({ lang }) => {
 
         <div className="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
           <a
-            href="/resume.pdf"
+            href="/Thanaphat_Tangcham_Resume.pdf"
             className="bg-slate-900 text-white flex gap-2 items-center py-2.5 px-6 rounded-lg"
           >
             <FaFileAlt /> {t.resume}

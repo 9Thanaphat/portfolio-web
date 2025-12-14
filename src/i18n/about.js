@@ -5,11 +5,11 @@ export const aboutText = {
     title: "Computer Engineering Student",
 
     p1:
-      "Computer Engineering student at Rajamangala University of Technology Thanyaburi (RMUTT) with a strong interest in full-stack development.",
+      "Computer Engineering student at Rajamangala University of Technology Thanyaburi (RMUTT) with a strong interest in full-stack web development.",
     p2:
-      "Experienced in building web applications and hands-on engineering projects, and currently expanding skills in modern frontend and backend technologies.",
+      "Hands-on experience building web applications using modern frontend and backend technologies.",
     p3:
-      "Seeking an internship opportunity to gain practical experience and contribute to real-world software development.",
+      "Seeking a software engineering internship to gain practical experience and contribute to real-world projects.",
 
     resume: "Resume",
     github: "GitHub",
