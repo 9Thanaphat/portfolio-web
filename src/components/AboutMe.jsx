@@ -34,7 +34,7 @@ const AboutMe = ({ lang }) => {
         <div className="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
           <a
             href="/Thanaphat_Tangcham_Resume.pdf"
-            className="bg-slate-900  hover:bg-slate-700 text-white flex gap-2 items-center py-2.5 px-6 rounded-lg transition-colors duration-200"
+            className="bg-slate-900  hover:bg-slate-700 dark:bg-white dark:text-black dark:hover:bg-slate-300 text-white flex gap-2 items-center py-2.5 px-6 rounded-lg transition-colors duration-200"
           >
             <FaFileAlt /> {t.resume}
           </a>
