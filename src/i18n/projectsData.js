@@ -13,7 +13,7 @@ export const projectsText = {
         previewLink: "http://203.159.93.245:5173/",
       },
       {
-        title: "pc-builder-web",
+        title: "PC Builder Web",
         image: "/img/pc-1.png",
         gif:"/img/pc-2.png",
         description:
