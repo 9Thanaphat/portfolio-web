@@ -6,10 +6,6 @@ const Contact = () => {
     <section id='contact' className='py-20 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800'>
       <div className='max-w-3xl mx-auto px-6 text-center'>
 
-        <h2 className='text-3xl font-bold text-slate-800 dark:text-white mb-6'>
-          Contact Me
-        </h2>
-
         <p className='text-lg text-slate-600 dark:text-slate-300 mb-8 font-medium leading-relaxed'>
           I am currently looking for an internship opportunity. <br className="hidden md:block" />
           I would appreciate the opportunity to work with you.
