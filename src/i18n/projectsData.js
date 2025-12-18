@@ -3,6 +3,16 @@ export const projectsText = {
     section: "Projects",
     list: [
       {
+        title: "Kanban Board Web",
+        image: "/img/kanban.png",
+        gif: "/img/kanban.gif",
+        description:
+          "Developed a functional Kanban board using @hello-pangea/dnd for seamless drag-and-drop task management. Features include real-time state updates, LocalStorage persistence, and a customizable UI with dynamic palette switching.",
+        techStack: ["React", "JavaScript", "Tailwind CSS"],
+        githubLink: "https://github.com/9Thanaphat/kanban-board",
+        previewLink: "https://kanban-board-umber-seven.vercel.app",
+      },
+      {
         title: "simple-auth-website",
         image: "/img/auth-1.png",
         gif: "/img/auth-2.png",
@@ -56,6 +66,16 @@ export const projectsText = {
   th: {
     section: "ผลงาน",
     list: [
+      {
+        title: "Kanban Board Web",
+        image: "/img/kanban.png",
+        gif: "/img/kanban.gif",
+        description:
+          "พัฒนาเว็บแอปพลิเคชันจัดการงานในรูปแบบ Kanban Board โดยเน้นการใช้งานระบบ Drag and Drop ผ่าน @hello-pangea/dnd เพื่อให้ผู้ใช้จัดการลำดับงานได้อย่างลื่นไหล รองรับการบันทึกข้อมูลแบบถาวรด้วย LocalStorage และมีระบบสลับ Palette สีเพื่อปรับแต่ง UI ได้ตามต้องการ",
+        techStack: ["React", "JavaScript", "Tailwind CSS"],
+        githubLink: "https://github.com/9Thanaphat/kanban-board",
+        previewLink: "https://kanban-board-umber-seven.vercel.app",
+      },
       {
         title: "simple-auth-website",
         image: "/img/auth-1.png",
