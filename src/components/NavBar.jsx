@@ -31,7 +31,7 @@ function NavBar({lang, setLang}) {
 
   return (
 	<>
-		<div className='h-20 px-4 sm:px-10 flex justify-between items-center border-b-2 border-gray-500 bg-black text-white dark:bg-[#000d21] dark:text-white'>
+		<div className='h-20 px-4 sm:px-10 flex justify-between items-center border-b-2 border-gray-500 bg-black text-white dark:bg-[#000c21] dark:text-white'>
 			<div className=''></div>
 			<div className="hidden md:flex space-x-8 font-semibold">
 				{/* <a href="#home" className="hover:text-orange-600">HOME</a> */}

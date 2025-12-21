@@ -8,7 +8,7 @@ const Portfolio = ({ lang }) => {
   return (
     <section
       id="portfolio"
-      className="px-6 py-12 lg:px-20 bg-primary dark:bg-[#00021c] dark:text-white"
+      className="px-6 py-12 lg:px-20  dark:text-white"
     >
       <div className="max-w-7xl mx-auto">
         <span className="text-orange-600 dark:text-orange-400 font-semibold tracking-wider text-sm uppercase">
