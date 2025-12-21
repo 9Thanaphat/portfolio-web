@@ -9,64 +9,69 @@ const AboutMe = ({ lang }) => {
   return (
     <section
       id="about"
-      className="min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 px-6 py-12 max-w-6xl mx-auto dark:text-gray-100"
+      className="min-h-[85vh] flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20 px-6 py-20 max-w-6xl mx-auto"
     >
       {/* Text Section */}
-      <div className="w-full md:w-1/2 space-y-6 max-w-prose text-center md:text-left">
-        <div className="space-y-2">
-          <h2 className="text-xl font-medium text-orange-400 tracking-wide">
+      <div className="w-full md:w-3/5 space-y-8 text-center md:text-left order-2 md:order-1">
+        <div className="space-y-3">
+          <span className="text-orange-500 dark:text-orange-400 font-semibold uppercase tracking-widest text-sm">
             {t.hello}
-          </h2>
-          <h1 className="text-4xl md:text-5xl font-bold">
+          </span>
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white">
             {t.name}
           </h1>
-          <p className="text-lg text-slate-600 dark:text-slate-400 font-medium">
+          <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 font-medium italic">
             {t.title}
           </p>
         </div>
 
-        <div className="text-base leading-7 text-slate-600 dark:text-slate-300 space-y-4">
-          <p>{t.p1}</p>
+        <div className="text-lg leading-relaxed text-slate-600 dark:text-slate-300 space-y-5 max-w-2xl">
+          <p className="border-l-4 border-orange-400 pl-4 py-1 bg-orange-50/30 dark:bg-orange-900/10">
+            {t.p1}
+          </p>
           <p>{t.p2}</p>
-          <p>{t.p3}</p>
+          <p className="font-light italic text-slate-500">{t.p3}</p>
         </div>
 
-        <div className="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
+        <div className="flex flex-wrap gap-4 pt-6 justify-center md:justify-start">
           <a
             href="/Thanaphat_Tangcham_Resume.pdf"
-            className="bg-slate-900  hover:bg-slate-700 dark:bg-white dark:text-black dark:hover:bg-slate-300 text-white flex gap-2 items-center py-2.5 px-6 rounded-lg transition-colors duration-200"
+            className="bg-slate-900 hover:bg-orange-500 dark:bg-white dark:text-black dark:hover:bg-orange-400 text-white flex gap-3 items-center py-3 px-8 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-orange-200 dark:hover:shadow-none"
           >
             <FaFileAlt /> {t.resume}
           </a>
 
-          <a
-            href="https://github.com/9thanaphat"
-            target="_blank"
-            rel="noreferrer"
-            className="border  hover:bg-slate-800 hover:text-white flex gap-2 items-center py-2.5 px-6 rounded-lg transition-colors duration-200"
-          >
-            <FaGithub /> {t.github}
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/9thanaphat/"
-            target="_blank"
-            rel="noreferrer"
-            className="border hover:bg-blue-500 hover:text-white flex gap-2 items-center py-2.5 px-6 rounded-lg transition-colors duration-200"
-          >
-            <FaLinkedin /> {t.linkedin}
-          </a>
+          <div className="flex gap-3">
+            <a
+              href="https://github.com/9thanaphat"
+              target="_blank"
+              rel="noreferrer"
+              className="p-3 border-2 border-slate-200 dark:border-slate-700 hover:border-slate-900 dark:hover:border-white rounded-full transition-all duration-300"
+              title="GitHub"
+            >
+              <FaGithub className="text-2xl" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/9thanaphat/"
+              target="_blank"
+              rel="noreferrer"
+              className="p-3 border-2 border-slate-200 dark:border-slate-700 hover:border-blue-500 rounded-full transition-all duration-300 text-slate-600 dark:text-slate-400 hover:text-blue-500"
+              title="LinkedIn"
+            >
+              <FaLinkedin className="text-2xl" />
+            </a>
+          </div>
         </div>
       </div>
 
       {/* Image Section */}
-      <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-        <img
-          src={my_photo}
-          alt="Thanaphat Tangcham"
-          className="w-72 h-72 object-cover rounded-lg"
-        />
-      </div>
+<div className="w-full md:w-2/5 flex justify-center md:justify-end order-1 md:order-2">
+  <img
+    src={my_photo}
+    alt="Thanaphat Tangcham"
+    className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800"
+  />
+</div>
     </section>
   )
 }
