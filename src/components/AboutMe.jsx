@@ -46,7 +46,7 @@ const AboutMe = ({ lang }) => {
               href="https://github.com/9thanaphat"
               target="_blank"
               rel="noreferrer"
-              className="p-3 border-2 border-slate-200 dark:border-slate-700 hover:border-slate-900 dark:hover:border-white text-slate-600 dark:text-slate-400 hover:dark:text-slate-200 rounded-full transition-all duration-300"
+              className="p-3 border-2 border-slate-200 dark:border-slate-700 hover:border-slate-900 dark:hover:border-white text-slate-600 hover:text-slate-800 dark:text-slate-400 hover:dark:text-slate-200 rounded-full transition-all duration-300"
               title="GitHub"
             >
               <FaGithub className="text-2xl" />
